@@ -1,0 +1,1 @@
+Hier liegen alle fertigen Sprites
