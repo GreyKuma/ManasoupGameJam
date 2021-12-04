@@ -1,0 +1,687 @@
+fileFormatVersion: 2
+guid: 7b27fafc9ba5ec741af9322e85bb49e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 746441273070501047
+    second: WohnzimmerObj_0
+  - first:
+      213: 6528537594174244143
+    second: WohnzimmerObj_1
+  - first:
+      213: 7333114942339428239
+    second: WohnzimmerObj_2
+  - first:
+      213: -3042840515455380728
+    second: WohnzimmerObj_3
+  - first:
+      213: -5299430223384995520
+    second: WohnzimmerObj_4
+  - first:
+      213: -4199441379150714077
+    second: WohnzimmerObj_5
+  - first:
+      213: -6437916874439883966
+    second: WohnzimmerObj_6
+  - first:
+      213: 2440077873864425724
+    second: WohnzimmerObj_7
+  - first:
+      213: 897537700207405883
+    second: WohnzimmerObj_8
+  - first:
+      213: -3622580316094411242
+    second: WohnzimmerObj_9
+  - first:
+      213: 3486921633222076873
+    second: WohnzimmerObj_10
+  - first:
+      213: -6780820388709133744
+    second: WohnzimmerObj_11
+  - first:
+      213: -1767773138384820180
+    second: WohnzimmerObj_12
+  - first:
+      213: -3669401912602464230
+    second: WohnzimmerObj_13
+  - first:
+      213: 2148286407487564988
+    second: WohnzimmerObj_14
+  - first:
+      213: 5925984427649751649
+    second: WohnzimmerObj_15
+  - first:
+      213: 1819930522433566440
+    second: WohnzimmerObj_16
+  - first:
+      213: 9109391283709854398
+    second: WohnzimmerObj_17
+  - first:
+      213: -5076371297752297010
+    second: WohnzimmerObj_18
+  - first:
+      213: 8171576568647462591
+    second: WohnzimmerObj_19
+  - first:
+      213: -9031676818911933462
+    second: WohnzimmerObj_20
+  - first:
+      213: -8235567059095895909
+    second: WohnzimmerObj_22
+  - first:
+      213: -8035157795440169920
+    second: WohnzimmerObj_23
+  - first:
+      213: -900388353898544096
+    second: WohnzimmerObj_24
+  - first:
+      213: -3232522886728008064
+    second: WohnzimmerObj_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WohnzimmerObj_0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 566
+        width: 264
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcbe0f0264eb5a00800000000000000
+      internalID: 746441273070501047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_1
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 726
+        width: 124
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f250a8b2a560a9a50800000000000000
+      internalID: 6528537594174244143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_2
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 276
+        width: 186
+        height: 682
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f2043003574c560800000000000000
+      internalID: 7333114942339428239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_3
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 116
+        width: 173
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8039d104ca8a5c5d0800000000000000
+      internalID: -3042840515455380728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_4
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 116
+        width: 173
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0491b271a44a476b0800000000000000
+      internalID: -5299430223384995520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 494
+        width: 219
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b25a4b05698b5c0800000000000000
+      internalID: -4199441379150714077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_6
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 533
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243848556bce7a6a0800000000000000
+      internalID: -6437916874439883966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_7
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 532
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0caffe5e5ecd120800000000000000
+      internalID: 2440077873864425724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_8
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 531
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b226178c1b47c00800000000000000
+      internalID: 897537700207405883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 353
+        width: 208
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eced055620abdc0800000000000000
+      internalID: -3622580316094411242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_10
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 319
+        width: 103
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9a3db30c8046030800000000000000
+      internalID: 3486921633222076873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 331
+        width: 80
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052144568cfa5e1a0800000000000000
+      internalID: -6780820388709133744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_12
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 356
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28681b52bb9777e0800000000000000
+      internalID: -1767773138384820180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_13
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 355
+        width: 53
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10f03dd66aa31dc0800000000000000
+      internalID: -3669401912602464230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 178
+        width: 165
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbca8120b1f30dd10800000000000000
+      internalID: 2148286407487564988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 271
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a5f8290735d3250800000000000000
+      internalID: 5925984427649751649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_16
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 257
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e63b81fa21b14910800000000000000
+      internalID: 1819930522433566440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_17
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 113
+        width: 247
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2c091eb1f0b6e70800000000000000
+      internalID: 9109391283709854398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 78
+        width: 116
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec15c71533b1d89b0800000000000000
+      internalID: -5076371297752297010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 104
+        width: 194
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe23252895476170800000000000000
+      internalID: 8171576568647462591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_22
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 126
+        width: 113
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b904ea6c46365bd80800000000000000
+      internalID: -8235567059095895909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_23
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 107
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ce390ae826d7090800000000000000
+      internalID: -8035157795440169920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_24
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 58
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0248af5009d2183f0800000000000000
+      internalID: -900388353898544096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WohnzimmerObj_21
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 83
+        width: 178
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eb148af85c323d0800000000000000
+      internalID: -3232522886728008064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
