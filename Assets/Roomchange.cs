@@ -14,10 +14,13 @@ public class Roomchange : MonoBehaviour
         if (!isAnimating)
         {
             if (RoomNr < 5)
-                RoomNr++;
+            {       
+            RoomNr++;
+            isAnimating = true;
+            }
 
             CameraAnim.SetInteger("RoomID", RoomNr);
-            isAnimating = true;
+          
         }
         
     }
@@ -27,10 +30,12 @@ public class Roomchange : MonoBehaviour
         if (!isAnimating)
         {
             if (RoomNr > 1)
+            {
                 RoomNr--;
-
+                isAnimating = true;
+            }
             CameraAnim.SetInteger("RoomID", RoomNr);
-            isAnimating = true;
+            
         }
     }
 
