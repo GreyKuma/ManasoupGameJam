@@ -536,9 +536,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMODAssets/Manasoup Gamejam Version 2.01/Manasoup Gamejam Version
-    2.01.fspro
-  sourceBankPath: FMODAssets/Manasoup Gamejam Version 2.01/Build
+  sourceProjectPath: FMODAssets/211205 Manasoup Gamejam Version 2.01/211205 Manasoup
+    Gamejam Version 2.01.fspro
+  sourceBankPath: FMODAssets/211205 Manasoup Gamejam Version 2.01/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -561,7 +561,9 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Foley
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

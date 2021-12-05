@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4d12fe16-9fed-44e8-b23e-da60710143d4}">
+		<property name="assetPath">
+			<value>SFX/Schaf/Schaf 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.94116666666666671</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{64d60af3-eb20-4ba2-bdd8-f073d2bca0f4}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{eb898f28-99bf-48c8-b10a-b765f5934baa}">
+		<property name="assetPath">
+			<value>SFX/Pot Plant/Plant 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6017291666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{64d60af3-eb20-4ba2-bdd8-f073d2bca0f4}</destination>
+		</relationship>
+	</object>
+</objects>
