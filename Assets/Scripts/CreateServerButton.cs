@@ -12,10 +12,19 @@ public class CreateServerButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(CreateGame);
+
+		NetworkAPI.OnCreated += OnCreated;
     }
 
     private void CreateGame()
     {
         network.CreateServer();
     }
+
+	private void OnCreated(string roomId)
+	{
+		Debug.Log("Created room: " + roomId);
+		// TODO: display room id
+		// TODO: disable join interface and or move into waiting screen
+	}
 }
