@@ -9,19 +9,21 @@ public class CreateServerButton : MonoBehaviour
     private Button button;
     private NetworkAPI network = NetworkAPI.Instance;
     private MessageBoxHandler messageBox;
-    [SerializeField] Button JoinServerButton;
+    private Button joinServerButton;
 
     void Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(CreateGame);
         messageBox = FindObjectOfType<MessageBoxHandler>();
+        joinServerButton = FindObjectOfType<JoinServerButton>().GetComponent<Button>();
     }
 
     private void OnEnable()
     {
         RegisterHandlers();
-        JoinServerButton.interactable = true;
+        joinServerButton = FindObjectOfType<JoinServerButton>().GetComponent<Button>();
+        joinServerButton.interactable = true;
     }
 
     private void OnDisable()
@@ -64,12 +66,12 @@ public class CreateServerButton : MonoBehaviour
 	{
         messageBox.MessageBoxText = $"Created room: {roomId}";
         Debug.Log(messageBox.MessageBoxText);
-        JoinServerButton.interactable = false;
+        joinServerButton.interactable = false;
     }
 
     private void OnClosed()
     {
-        JoinServerButton.interactable = true;
+        joinServerButton.interactable = true;
     }
 
     private void OnStart(string roomId)

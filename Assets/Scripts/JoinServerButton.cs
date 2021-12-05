@@ -10,7 +10,7 @@ public class JoinServerButton : MonoBehaviour
     private NetworkAPI network = NetworkAPI.Instance;
     private NetworkIdInputField inputField;
     private MessageBoxHandler messageBox;
-    [SerializeField] private Button CreateLobbyButton;
+    private Button createLobbyButton;
 
     void Start()
     {
@@ -24,7 +24,9 @@ public class JoinServerButton : MonoBehaviour
     private void OnEnable()
     {
         RegisterHandlers();
-        CreateLobbyButton.interactable = true;
+        createLobbyButton = FindObjectOfType<CreateServerButton>().GetComponent<Button>();
+        createLobbyButton.interactable = true;
+
     }
 
     private void OnDisable()
@@ -68,7 +70,7 @@ public class JoinServerButton : MonoBehaviour
 
 	private void OnJoined(string id)
 	{
-        CreateLobbyButton.interactable = false;
+        createLobbyButton.interactable = false;
         messageBox.MessageBoxText = "Raum beigetreten";
         Debug.Log(messageBox.MessageBoxText);
     }
