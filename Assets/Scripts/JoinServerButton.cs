@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,30 +9,28 @@ public class JoinServerButton : MonoBehaviour
     private Button button;
     private NetworkAPI network = NetworkAPI.Instance;
     private NetworkIdInputField inputField;
-    [SerializeField] private Text MessageBox;
+    private MessageBoxHandler messageBox;
     [SerializeField] private Button CreateLobbyButton;
-	private string messageboxText = "";
 
     void Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(JoinGame);
         inputField = FindObjectOfType<NetworkIdInputField>();
+        messageBox = FindObjectOfType<MessageBoxHandler>();
     }
 
-    private void Update()
-    {
-        MessageBox.text = messageboxText;
-    }
 
     private void OnEnable()
     {
         RegisterHandlers();
+        CreateLobbyButton.interactable = true;
     }
 
     private void OnDisable()
     {
         UnregisterHandlers();
+        messageBox.MessageBoxText = String.Empty;
     }
 
     public void RegisterHandlers()
@@ -62,27 +61,27 @@ public class JoinServerButton : MonoBehaviour
     private void OnGameStart(string id)
     {
         NetworkAPI.OnClosed -= OnWrongId;
-		messageboxText = "Game startet";
-        Debug.Log(messageboxText);
+        messageBox.MessageBoxText = "Game startet";
+        Debug.Log(messageBox.MessageBoxText);
         //TODO: load game
     }
 
 	private void OnJoined(string id)
 	{
         CreateLobbyButton.interactable = false;
-		messageboxText = "Raum beigetreten";
-        Debug.Log(messageboxText);
+        messageBox.MessageBoxText = "Raum beigetreten";
+        Debug.Log(messageBox.MessageBoxText);
     }
 
     private void OnWrongId()
     {
-        messageboxText = "Raum existiert nicht!";
-        Debug.Log(messageboxText);
+        messageBox.MessageBoxText = "Raum existiert nicht!";
+        Debug.Log(messageBox.MessageBoxText);
     }
 
     private void OnGameCreated(string id)
     {
-        messageboxText = "Lobby erstellt";
-        Debug.Log(messageboxText);
+        messageBox.MessageBoxText = "Lobby erstellt";
+        Debug.Log(messageBox.MessageBoxText);
     }
 }

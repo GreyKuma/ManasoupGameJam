@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,28 +8,26 @@ public class CreateServerButton : MonoBehaviour
 {
     private Button button;
     private NetworkAPI network = NetworkAPI.Instance;
-    private string messagBoxText;
-    [SerializeField] Text messageBox;
+    private MessageBoxHandler messageBox;
     [SerializeField] Button JoinServerButton;
 
     void Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(CreateGame);
+        messageBox = FindObjectOfType<MessageBoxHandler>();
     }
 
-    private void Update()
-    {
-        messageBox.text = messagBoxText;
-    }
     private void OnEnable()
     {
         RegisterHandlers();
+        JoinServerButton.interactable = true;
     }
 
     private void OnDisable()
     {
         UnregisterHandlers();
+        messageBox.MessageBoxText = String.Empty;
     }
 
     public void RegisterHandlers()
@@ -49,13 +48,22 @@ public class CreateServerButton : MonoBehaviour
 
     private void CreateGame()
     {
-        network.CreateServer();
+        try
+        {
+            network.CreateServer();
+        }
+        catch(Exception e)
+        {
+            messageBox.MessageBoxText = $"Couldn't create a Server";
+            Debug.Log($"{messageBox.MessageBoxText}{e.Message}");
+        }
+        
     }
 
 	private void OnCreated(string roomId)
 	{
-        messagBoxText = $"Created room: {roomId}";
-        Debug.Log(messagBoxText);
+        messageBox.MessageBoxText = $"Created room: {roomId}";
+        Debug.Log(messageBox.MessageBoxText);
         JoinServerButton.interactable = false;
     }
 
