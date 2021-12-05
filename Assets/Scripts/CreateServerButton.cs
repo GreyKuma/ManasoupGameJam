@@ -7,6 +7,7 @@ public class CreateServerButton : MonoBehaviour
 {
     private Button button;
     private NetworkAPI network = NetworkAPI.Instance;
+    private string messagBoxText;
     [SerializeField] Text messageBox;
     [SerializeField] Button JoinServerButton;
 
@@ -14,8 +15,36 @@ public class CreateServerButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(CreateGame);
+    }
 
-		NetworkAPI.OnCreated += OnCreated;
+    private void Update()
+    {
+        messageBox.text = messagBoxText;
+    }
+    private void OnEnable()
+    {
+        RegisterHandlers();
+    }
+
+    private void OnDisable()
+    {
+        UnregisterHandlers();
+    }
+
+    public void RegisterHandlers()
+    {
+        NetworkAPI.OnCreated += OnCreated;
+        NetworkAPI.OnClosed += OnClosed;
+        //NetworkAPI.OnJoined
+        NetworkAPI.OnStart += OnStart;
+    }
+
+    public void UnregisterHandlers()
+    {
+        NetworkAPI.OnCreated -= OnCreated;
+        NetworkAPI.OnClosed -= OnClosed;
+        //NetworkAPI.OnJoined
+        NetworkAPI.OnStart -= OnStart;
     }
 
     private void CreateGame()
@@ -25,8 +54,18 @@ public class CreateServerButton : MonoBehaviour
 
 	private void OnCreated(string roomId)
 	{
-		Debug.Log("Created room: " + roomId);
-		// TODO: display room id
-		// TODO: disable join interface and or move into waiting screen
-	}
+        messagBoxText = $"Created room: {roomId}";
+        Debug.Log(messagBoxText);
+        JoinServerButton.interactable = false;
+    }
+
+    private void OnClosed()
+    {
+        JoinServerButton.interactable = true;
+    }
+
+    private void OnStart(string roomId)
+    {
+        //TODO: load game
+    }
 }

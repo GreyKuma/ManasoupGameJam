@@ -16,17 +16,39 @@ public class JoinServerButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(JoinGame);
-        NetworkAPI.OnClosed += OnWrongId;
-		NetworkAPI.OnJoined += OnJoined;
-        NetworkAPI.OnStart += OnGameStart;
-        NetworkAPI.OnCreated += OnGameCreated;
         inputField = FindObjectOfType<NetworkIdInputField>();
     }
 
-	private void Update() 
-	{
-		MessageBox.text = messageboxText;
-	}
+    private void Update()
+    {
+        MessageBox.text = messageboxText;
+    }
+
+    private void OnEnable()
+    {
+        RegisterHandlers();
+    }
+
+    private void OnDisable()
+    {
+        UnregisterHandlers();
+    }
+
+    public void RegisterHandlers()
+    {
+        NetworkAPI.OnClosed += OnWrongId;
+        NetworkAPI.OnJoined += OnJoined;
+        NetworkAPI.OnStart += OnGameStart;
+        NetworkAPI.OnCreated += OnGameCreated;
+    }
+
+    public void UnregisterHandlers()
+    {
+        NetworkAPI.OnClosed -= OnWrongId;
+        NetworkAPI.OnJoined -= OnJoined;
+        NetworkAPI.OnStart -= OnGameStart;
+        NetworkAPI.OnCreated -= OnGameCreated;
+    }
 
     private void JoinGame()
     {
@@ -42,6 +64,7 @@ public class JoinServerButton : MonoBehaviour
         NetworkAPI.OnClosed -= OnWrongId;
 		messageboxText = "Game startet";
         Debug.Log(messageboxText);
+        //TODO: load game
     }
 
 	private void OnJoined(string id)
