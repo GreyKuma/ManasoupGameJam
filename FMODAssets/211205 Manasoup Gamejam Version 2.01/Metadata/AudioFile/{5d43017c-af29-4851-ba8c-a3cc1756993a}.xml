@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{3b152417-0ab3-463e-888f-3e197e842d49}">
+	<object class="AudioFile" id="{5d43017c-af29-4851-ba8c-a3cc1756993a}">
 		<property name="assetPath">
-			<value>SFX/Pos _ Neg/Negative.wav</value>
+			<value>SFX/Pos _ Neg/Negativ.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>9.0928749999999994</value>
+			<value>15</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{64d60af3-eb20-4ba2-bdd8-f073d2bca0f4}</destination>
