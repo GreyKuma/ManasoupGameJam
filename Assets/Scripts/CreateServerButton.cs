@@ -7,6 +7,8 @@ public class CreateServerButton : MonoBehaviour
 {
     private Button button;
     private NetworkAPI network = NetworkAPI.Instance;
+    [SerializeField] Text messageBox;
+    [SerializeField] Button JoinServerButton;
 
     void Start()
     {

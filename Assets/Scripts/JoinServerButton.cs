@@ -9,15 +9,17 @@ public class JoinServerButton : MonoBehaviour
     private NetworkAPI network = NetworkAPI.Instance;
     private NetworkIdInputField inputField;
     [SerializeField] private Text MessageBox;
+    [SerializeField] private Button CreateLobbyButton;
 	private string messageboxText = "";
 
     void Start()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(CreateGame);
+        button.onClick.AddListener(JoinGame);
         NetworkAPI.OnClosed += OnWrongId;
 		NetworkAPI.OnJoined += OnJoined;
         NetworkAPI.OnStart += OnGameStart;
+        NetworkAPI.OnCreated += OnGameCreated;
         inputField = FindObjectOfType<NetworkIdInputField>();
     }
 
@@ -26,7 +28,7 @@ public class JoinServerButton : MonoBehaviour
 		MessageBox.text = messageboxText;
 	}
 
-    private void CreateGame()
+    private void JoinGame()
     {
         //TODO: show error message
         if (!string.IsNullOrWhiteSpace(inputField.id))
@@ -38,19 +40,26 @@ public class JoinServerButton : MonoBehaviour
     private void OnGameStart(string id)
     {
         NetworkAPI.OnClosed -= OnWrongId;
-		Debug.Log("Started");
-		messageboxText = "Started";
+		messageboxText = "Game startet";
+        Debug.Log(messageboxText);
     }
 
 	private void OnJoined(string id)
 	{
-		// TODO: disable create interface or move into waiting screen
-		Debug.Log("Joined");
-		messageboxText = "Joined";
-	}
+        CreateLobbyButton.interactable = false;
+		messageboxText = "Raum beigetreten";
+        Debug.Log(messageboxText);
+    }
 
     private void OnWrongId()
     {
-		messageboxText = "ID existiert nicht!";
+        messageboxText = "Raum existiert nicht!";
+        Debug.Log(messageboxText);
+    }
+
+    private void OnGameCreated(string id)
+    {
+        messageboxText = "Lobby erstellt";
+        Debug.Log(messageboxText);
     }
 }
